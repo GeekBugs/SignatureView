@@ -39,7 +39,7 @@
 
 | 属性名             | 字段        | 描述              | 默认值       |
 | --------------- | --------- | --------------- | --------- |
-| penColor | color   | 画笔颜色 | 0         |0xFF000000
+| penColor | color   | 画笔颜色 | 0xFF000000         |
 | backColor       | color | 背板颜色            |   0xFFFFFFFF    |
 | penWidth       | int     | 画笔大小            | 10 |
 
