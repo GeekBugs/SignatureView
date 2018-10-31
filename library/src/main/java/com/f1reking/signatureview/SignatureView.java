@@ -78,6 +78,18 @@ public class SignatureView extends View {
         return isTouched;
     }
 
+    public void setPentWidth(int pentWidth) {
+        mPentWidth = pentWidth;
+    }
+
+    public void setPenColor(int penColor) {
+        mPenColor = penColor;
+    }
+
+    public void setBackColor(int backColor) {
+        mBackColor = backColor;
+    }
+
     /**
      * 清空签名
      */
@@ -100,7 +112,7 @@ public class SignatureView extends View {
      * @throws IOException
      */
     public void save(String path, boolean clearBlank, int blank) throws IOException {
-        if (TextUtils.isEmpty(path)){
+        if (TextUtils.isEmpty(path)) {
             return;
         }
         mSavePath = path;
@@ -136,9 +148,8 @@ public class SignatureView extends View {
 
     /**
      * 获取保存路径
-     * @return
      */
-    public String getSavePath(){
+    public String getSavePath() {
         return mSavePath;
     }
 
