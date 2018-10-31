@@ -26,7 +26,7 @@
 	}
 ```
 ## 使用
-```java
+```
 <com.f1reking.signatureview.SignatureView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
