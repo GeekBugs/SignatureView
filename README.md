@@ -5,7 +5,7 @@
 
 ## 预览图
 
-<a href="art/SignatureView.png"><img src="art/SignatureView.png" width="30%"/></a>
+<a href="art/SignatureView.jpg"><img src="art/SignatureView.jpg" width="30%"/></a>
 
 ## 引入
 
