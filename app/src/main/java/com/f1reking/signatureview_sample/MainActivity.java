@@ -1,4 +1,4 @@
-package com.f1reking.signaturevie_sample;
+package com.f1reking.signatureview_sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
