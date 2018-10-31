@@ -5,7 +5,7 @@
 
 ## 预览图
 
-<a href="art/dashview.png"><img src="art/dashview.png" width="30%"/></a>
+<a href="art/SignatureView.png"><img src="art/SignatureView.png" width="30%"/></a>
 
 ## 引入
 
@@ -28,11 +28,11 @@
 ## 使用
 ```java
 <com.f1reking.signatureview.SignatureView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:penColor="@color/colorPrimary"
-        app:penWidth="30"
-        app:backColor="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:penColor="@color/colorPrimary"
+    app:penWidth="30"
+    app:backColor="@color/colorPrimary"
         />
 ```
 ### 属性：
