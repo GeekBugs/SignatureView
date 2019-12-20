@@ -29,6 +29,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import androidx.annotation.ColorInt;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -98,11 +99,11 @@ public class SignatureView extends View {
         mPentWidth = pentWidth;
     }
 
-    public void setPenColor(int penColor) {
+    public void setPenColor(@ColorInt int penColor) {
         mPenColor = penColor;
     }
 
-    public void setBackColor(int backColor) {
+    public void setBackColor(@ColorInt int backColor) {
         mBackColor = backColor;
     }
 
@@ -112,9 +113,8 @@ public class SignatureView extends View {
     public void clear() {
         if (mCanvas != null) {
             isTouched = false;
-            mPaint.setColor(mPenColor);
-            mCanvas.drawColor(mBackColor, PorterDuff.Mode.CLEAR);
-            mPaint.setColor(mPenColor);
+            mCanvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
+            mCanvas.drawColor(mBackColor);
             invalidate();
         }
     }
@@ -282,14 +282,14 @@ public class SignatureView extends View {
                 isTouched = true;
                 float x = event.getX();
                 float y = event.getY();
-                float preX = mPenX;
-                float preY = mPenY;
-                float dx = Math.abs(x - preX);
-                float dy = Math.abs(y - preY);
+                float penX = mPenX;
+                float penY = mPenY;
+                float dx = Math.abs(x - penX);
+                float dy = Math.abs(y - penY);
                 if (dx >= 3 || dy >= 3) {
-                    float cx = (x + preX) / 2;
-                    float cy = (y + preY) / 2;
-                    mPath.quadTo(preX, preY, cx, cy);
+                    float cx = (x + penX) / 2;
+                    float cy = (y + penY) / 2;
+                    mPath.quadTo(penX, penY, cx, cy);
                     mPenX = x;
                     mPenY = y;
                 }
