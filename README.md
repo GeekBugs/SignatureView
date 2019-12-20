@@ -22,7 +22,7 @@
 #### Step 2. Add the dependency
 ```
 	dependencies {
-	       compile 'com.github.F1ReKing:SignatureView:v1.0.0'
+	       compile 'com.github.F1ReKing:SignatureView:1.1.0'
 	}
 ```
 ## 使用
