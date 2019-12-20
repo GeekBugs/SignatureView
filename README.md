@@ -43,6 +43,13 @@
 | backColor       | color | 背板颜色            |   0xFFFFFFFF    |
 | penWidth       | int     | 画笔大小            | 10 |
 
+### api:
+| 方法             | 描述        | 参数说明              |
+| --------------- | --------- | --------------- |
+| void clear() | 清空签名   |  | 
+| void save(String path, boolean clearBlank, int blank) | 保存图片 | path：保存的地址；clearBlank：是否清除空白区域；blank：空白区域留空距离；           |  
+| void getSavePath()       | 获取保存路径     |             | 
+
 ## License
 
 ```
