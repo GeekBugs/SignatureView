@@ -1,8 +1,8 @@
 # SignatureView
 [![](https://jitpack.io/v/F1ReKing/SignatureView.svg)](https://jitpack.io/#F1ReKing/SignatureView)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/F1ReKing/SignatureView/blob/master/LICENSE)   
-<p>一个在Android上的签名板，能保存所签名的图片</p>
-
+<p>一个在 Android 上的签名板，能保存所签名的图片</p>
+ 
 ## 预览图
 
 <a href="art/SignatureView.jpg"><img src="art/SignatureView.jpg" width="30%"/></a>
